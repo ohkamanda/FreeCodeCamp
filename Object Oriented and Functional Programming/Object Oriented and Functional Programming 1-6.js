@@ -3,7 +3,7 @@
 var car = {
 	"wheels": 4,
 	"engines": 1,
-	"seats: 6
+	"seats": 6
 };
 
 var motorcycle = {
