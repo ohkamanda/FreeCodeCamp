@@ -74,3 +74,66 @@ var timesSeven = oldArray.map(function(val){
 });
 
 return timesSeven;
+
+// Waypoint: Condense arrays with reduce
+
+var myArray = [4,5,6,7,8];
+
+var singleVal = myArray.reduce(function(previousVal, currentVal) {
+	return previousVal + currentVal;
+}, 0);
+
+return singleVal;
+
+// Waypoint: Filter Arrays with filter
+
+var oldArray = [1,2,3,4,5,6,7,8,9,10];
+
+var newArray = oldArray.filter(function(val) {
+  return val <= 5;
+});
+
+return newArray;
+
+// Waypoint: Sort Arrays with sort
+
+var array = [1, 12, 21, 2];
+
+array.sort(function(a,b) {
+  return b - a;
+});
+
+return array;
+
+// Waypoint: Reverse Arrays with reverse
+
+var array = [1,2,3,4,5,6,7];
+
+var newArray = array.reverse();
+
+return newArray;
+
+// Waypoint: Concatenate Arrays with concat
+
+var oldArray = [1,2,3];
+
+var concatMe = [4,5,6];
+
+var newArray = oldArray.concat(concatMe);
+
+// Waypoint: Split Strings with split
+
+var string = "Split me into an array";
+
+var array = string.split(" ");
+
+return array;
+
+// Waypoint: Join Strings with join
+
+var joinMe = ["Split","me","into","an","array"];
+
+var joinedString = joinMe.join(" ");
+
+return joinedString;
+
