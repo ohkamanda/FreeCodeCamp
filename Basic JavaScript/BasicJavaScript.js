@@ -572,3 +572,53 @@ function headsOrTails() {
 	}
 }
 
+// Waypoint: Sift through Text with Regular Expressions
+/*
+Regular expressions are used to find certain words or patterns inside of strings.
+
+For example, if we wanted to find the word the in the string The dog chased the cat, we could use the following regular expression: /the/gi
+
+Let's break this down a bit:
+
+the is the pattern we want to match.
+
+g means that we want to search the entire string for this pattern instead of just the first match.
+
+i means that we want to ignore the case (uppercase or lowercase) when searching for the pattern.
+
+Regular expressions are written by surrounding the pattern with / symbols.
+
+Let's try selecting all the occurrences of the word and in the string Ada Lovelace and Charles Babbage designed the first computer and the software that would have run on it.
+
+We can do this by replacing the . part of our regular expression with the word and.
+*/
+
+var test = (function() {
+	var testString = "Ada Lovelace and Charles Babbage designed the first computer and the software that would have run on it.";
+	var expressionToGetSoftware = /software/gi;
+	var expressionToGetAnd = /and/gi;
+	return testString.match(expressionToGetAnd).length;
+})();(function(){return test;})();
+
+// Waypoint: Find Numbers with Regular Expressions
+/*
+We can use special selectors in Regular Expressions to select a particular type of value.
+
+One such selector is the digit selector \d which is used to retrieve the numbers in a string.
+
+It is used like this: /\d/g.
+
+For numbers this is often written as /\d+/g, where the + following the digit selector allows this regular expression to match multi-digit numbers.
+
+Use the \d selector to select the number of numbers in the string, allowing for the possibility of multi-digit numbers.
+*/
+var test = (function() {
+	var testString = "There are 3 cats but 4 dogs.";
+	var expression = /\d+/g;
+	return testString.match(expression).length;
+})();(function(){return test;})();
+
+// Waypoint: Find Whitespace with Regular Expressions
+/*
+
+*/
