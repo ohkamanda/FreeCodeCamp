@@ -582,8 +582,10 @@ Let's break this down a bit:
 
 the is the pattern we want to match.
 
+***
 g means that we want to search the entire string for this pattern instead of just the first match.
 
+***
 i means that we want to ignore the case (uppercase or lowercase) when searching for the pattern.
 
 Regular expressions are written by surrounding the pattern with / symbols.
@@ -604,13 +606,14 @@ var test = (function() {
 /*
 We can use special selectors in Regular Expressions to select a particular type of value.
 
+***
 One such selector is the digit selector \d which is used to retrieve the numbers in a string.
 
 It is used like this: /\d/g.
 
 For numbers this is often written as /\d+/g, where the + following the digit selector allows this regular expression to match multi-digit numbers.
 
-Use the \d selector to select the number of numbers in the string, allowing for the possibility of multi-digit numbers.
+Use the \d selector to select the number of numbers in the string, with + allowing for the possibility of multi-digit numbers.
 */
 var test = (function() {
 	var testString = "There are 3 cats but 4 dogs.";
@@ -620,5 +623,37 @@ var test = (function() {
 
 // Waypoint: Find Whitespace with Regular Expressions
 /*
+We can also use regular expression selectors like \s to find whitespace in a string.
 
+The whitespace characters are " " (space), \r (the carriage return), \n (newline), \t (tab), and \f (the form feed).
+
+The whitespace regular expression looks like this:
+
+/\s+/g
+
+Use it to select all the whitespace characters in the sentence string.
 */
+
+var test = (function(){
+	var testString = "How many spaces are there in this sentence?";
+	var expression = /\s+/g;
+	return testString.match(expression).length;
+	}
+)();(function(){return test;})();
+
+// Waypoint: Invert Regular Expression Matches with JavaScript
+/*
+You can invert any match by using the uppercase version of the regular expression selector.
+
+***
+For example, \s will match any whitespace, and \S will match anything that isn't whitespace.
+
+Use /\S/g to count the number of non-whitespace characters in testString.
+*/
+
+var test = (function(){
+	var testString = "How many non-space characters are there in this sentence?";
+	var expression = /\S/g;
+	return testString.match(expression).length;
+	})();
+(function() {return test;})();
