@@ -11,4 +11,3 @@ var motorBike = {
 	"engines": 1,
 	"seats": 2
 };
-
