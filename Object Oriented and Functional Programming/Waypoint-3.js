@@ -28,5 +28,11 @@ In the editor, use the Car constructor to create a new instance and assign it to
 Then give myCar a nickname property with a string value.
 */
 
+var Car = function() {
+  this.wheels = 4;
+  this.engines = 1;
+  this.seats = 2;
+};
+
 var myCar = new Car();
 myCar.nickName = "Old Bessie";
