@@ -17,4 +17,4 @@ function reverseString(str) {
 	return newStr;
 }
 
-reverseString("hello");
+reverseString("Greetings from Space Camp!");
