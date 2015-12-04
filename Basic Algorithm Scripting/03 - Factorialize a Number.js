@@ -37,8 +37,7 @@ factorialize(5);
 
 // This code fails at fcc because: factorialize(0) should return 1. I tried
 // adding a while num > 0 but it still fails
-
-// Ok, fixed it:
+// Ok, fixed it...
 
 function factorialize(num) {
 	var factors = []; // Create an array to hold factors
