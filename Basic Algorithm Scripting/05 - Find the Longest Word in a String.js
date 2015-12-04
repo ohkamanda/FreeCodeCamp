@@ -6,10 +6,19 @@ Challenge: http://www.freecodecamp.com/challenges/bonfire-find-the-longest-word-
 Return the length of the longest word in the provided sentence.
 
 Your response should be a number.
+
+Helpful Resources: http://ironion.com/bonfire-find-the-longest-word-solution/
 */
 
 function findLongestWord(str) {
-  return str.length;
+	var splitStr = str.split(" "); // split str into an array of substrings
+	var longestWord = ""; // used to compare each word and return the longest
+	for (var i=0; i < splitStr.length; i++){ // loop through the array
+		if (splitStr[i].length > longestWord.length) { // find the largest word
+			longestWord = splitStr[i]; // assign longest word to longestWord var
+		}
+	}
+	return longestWord.length; // returns the longest word
 }
 
 findLongestWord("The quick brown fox jumped over the lazy dog");
