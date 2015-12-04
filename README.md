@@ -1,2 +1,2 @@
 # FCC
-Some of my work from Free Code Camp, with credit to @Rafase282 for the idea
+Some of my work from Free Code Camp, with credit to <https://github.com/Rafase282/My-FreeCodeCamp-Code> for the idea
