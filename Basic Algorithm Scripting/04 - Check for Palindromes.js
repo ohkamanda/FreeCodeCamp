@@ -18,8 +18,7 @@ Helpful Resources: (1) http://ironion.com/bonfire-reverse-a-string-solution/
 */
 
 function palindrome(str) {
-  var stripStr = str.toLowerCase().replace(/[.,?:;\/() _-]/g, '');
-  // converts to lower case, strips out spacing, capitalization and punctuation
+  var stripStr = str.toLowerCase().replace(/[.,?:;\/() _-]/g, ''); // converts to lower case, strips out spacing, capitalization and punctuation
   var checkStr = stripStr.split("").reverse().join(""); // reverse stripped string
   return stripStr === checkStr; // if strings match, return true. if not, false.
 }
