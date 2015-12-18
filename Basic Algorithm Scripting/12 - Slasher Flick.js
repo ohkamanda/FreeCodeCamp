@@ -19,7 +19,9 @@ Here are some helpful links:
 
 function slasher(arr, howMany) {
   // it doesn't always pay to be first
-  return arr;
+  var slash = arr.slice(howMany);
+  return slash;
 }
 
 slasher([1, 2, 3], 2);
+
