@@ -15,4 +15,18 @@ Remember to use Read-Search-Ask if you get stuck. Write your own code.
 Here are some helpful links:
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/slice
 http://ironion.com/bonfire-truncate-string-solution/
+https://github.com/FreeCodeCamp/FreeCodeCamp/wiki/bonfire-truncate-a-string
 */
+
+function truncate(str, num) {
+  // Clear out that junk in your trunk
+  if (str.length<=num) {
+    return str;
+  } else if (num<=3) {
+    return str.slice(0,num) + "...";
+  } else {
+    return str.slice(0,num-3) + "...";
+  }
+}
+
+truncate("A-tisket a-tasket A green and yellow basket", 11);
