@@ -10,6 +10,7 @@ Remember to use Read-Search-Ask if you get stuck. Write your own code.
 
 Here are some helpful links:
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push
+http://wulkan.me/bonfire-chunky-monkey/
 */
 
 function chunk(arr, size) {
