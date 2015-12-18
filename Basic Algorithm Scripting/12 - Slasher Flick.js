@@ -1,5 +1,5 @@
 /*
-Bonfire: Slash Flick
+Bonfire: Slasher Flick
 
 Author: http://ohkamanda.github.io/
 Challenge: http://www.freecodecamp.com/challenges/bonfire-slasher-flick
@@ -24,4 +24,3 @@ function slasher(arr, howMany) {
 }
 
 slasher([1, 2, 3], 2);
-
