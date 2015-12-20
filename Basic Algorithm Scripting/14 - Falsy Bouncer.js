@@ -18,7 +18,7 @@ Here are some helpful links:
 
 function bouncer(arr) {
   // Don't show a false ID to this bouncer.
-  return arr;
+  return arr.filter(Boolean); // uses filter to get rid of false values
 }
 
 bouncer([7, "ate", "", false, 9]);
