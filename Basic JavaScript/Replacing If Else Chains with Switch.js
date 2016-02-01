@@ -35,4 +35,3 @@ function myTest(val) {
 
 // Change this value to test
 myTest(7);
-
