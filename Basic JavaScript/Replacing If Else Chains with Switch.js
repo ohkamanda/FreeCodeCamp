@@ -2,7 +2,7 @@
 Replacing If Else Chains with Switch
 
 Author: http://ohkamanda.github.io/
-Challenge: http://http://www.freecodecamp.com/challenges/replacing-if-else-chains-with-switch
+Challenge: http://www.freecodecamp.com/challenges/replacing-if-else-chains-with-switch
 
 Change the chained if/if else statements into a switch statement.
 */
