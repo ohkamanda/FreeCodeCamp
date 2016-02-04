@@ -16,7 +16,7 @@ var myObj = {
 
 function checkObj(checkProp) {
   if (myObj.hasOwnProperty(checkProp)) {
-    return myObj.checkProp;
+    return myObj[checkProp];
   } else { return "Not Found";}
 }
 
